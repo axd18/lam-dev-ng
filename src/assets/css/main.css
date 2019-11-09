@@ -1,0 +1,21 @@
+
+
+body {
+	margin:0;
+    padding:0;
+}
+
+/*SLIDE*/
+.form {
+    position: absolute; 
+    right: 15%;
+    top: 125px; /* Cambiar bottom por top y los píxeles que necesites */
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: left;
+    font-size: 1em;
+    font-family: Roboto;
+}
