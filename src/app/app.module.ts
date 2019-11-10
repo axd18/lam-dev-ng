@@ -9,6 +9,7 @@ import { FormComponent } from './pages/form/form.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
+import { DataDbService } from './services/data-db.service';
 
 @NgModule({
   declarations: [
@@ -16,18 +17,16 @@ import { environment } from '../environments/environment';
     HeaderComponent,
     MainComponent,
     FormComponent,
-    AngularFireModule,
-    AngularFirestoreModule,
-
-    ReactiveFormsModule
   ],
   imports: [
     BrowserModule,
-    AngularFirestoreModule.initializeApp(environment.firebaseConfig),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     ReactiveFormsModule,
+    AngularFireModule,
+
   ],
-  providers: [],
+  providers: [DataDbService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
