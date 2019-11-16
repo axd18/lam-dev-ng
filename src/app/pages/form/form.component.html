@@ -1,32 +1,130 @@
-<div class="form">
-    <div class="container">
+
+              
+
+               <!--NAV-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.svg" width="150" height="" class="d-inline-block align-top" alt="">
+            </a>
+                    
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav mr-auto">
+                
+                
+               
+             </div>
+             <div class="navbar-nav">
+               <a class="nav-item nav-link" href="#">WORKS<span class="sr-only">(current)</span></a>
+               <a class="nav-item nav-link" href="#">ABOUT</a>
+               <a class="nav-item nav-link" href="#">CONTACT</a>
+             </div>
+            </div>
+    </nav>
+                
+                
+    <!--FIN NAV-->
+
+    <!-- MAIN -->
+    <div class="main">
+      <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+                <img src="assets/img/bg-masthead.svg" class="img-fluid max-width: 100% d-block w-100" alt="Responsive image">
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- FIN MAIN -->
+            
+          
+      <br><br>
+    <!-- FORM -->
+   
+    <div class="form">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+            </div>
+            <div class="col-sm">
+              <div class="">
+                <h3>Contact us!</h3><br>
+              </div>
+              <form [formGroup]="contactForm" (ngSubmit)="onSaveForm()">
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">name</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">email</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">message</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn-send btn-primary btn-lg btn-block">Send</button>
+              </form>
+            </div>
+            <div class="col-sm">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      
+    <!-- FIN FORM -->
+            
+    <br><br>
+    <!-- FOOTER -->
+    <div class="container-fluid bg-dark">
       <div class="row">
         <div class="col-sm">
-          <h1>Contact us!</h1>
-          <form [formGroup]="contactForm" (ngSubmit)="onSaveForm()">
-            <div class="form-group">
-              <input type="text" formControlName="name" placeholder="Your Name">
+          <div class="card text-white bg-dark " style="">
+            
+            <div class="card-body">
+              <h5 class="card-title">Contacto</h5>
+              <p class="card-text">
+
+                Texto simulado
+                
+                </p>
             </div>
-            <div class="form-group">
-                <input type="text" formControlName="email" placeholder="Your email">
-            </div>
-            <div class="form-group">
-                <textarea type="text" formControlName="message" placeholder="Type your Name"></textarea>
-            </div>
-            <button type="submit" class="btn-send btn-primary btn-lg btn-block">Send</button>
-          </form>
-          
+          </div>
         </div>
         <div class="col-sm">
-          
-          
+          <div class="card text-white bg-dark " style="">
+            
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">
+                <br>
+                Texto simulado
+                
+                </p>
+            </div>
+          </div> 
+         
         </div>
         <div class="col-sm">
           
         </div>
       </div>
     </div>
-  </div>
-              
+  
+    
+   
+    
+    
+    
+    
+   
+
+
           
             
